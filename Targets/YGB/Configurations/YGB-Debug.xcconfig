@@ -1,0 +1,11 @@
+// YGB Debug Configuration
+#include "../../../Targets/Shared/Configurations/Debug.xcconfig"
+#include "YGB-Application.xcconfig"
+
+// Debug overrides for YGB
+CONFIGURATION = Debug
+API_ENVIRONMENT = development
+API_BASE_URL = https://api-dev-ygb.example.com
+LOG_LEVEL = verbose
+ENABLE_NETWORK_LOGGING = YES
+SECURITY_CERTIFICATE_PINNING_ENABLED = NO

@@ -1,0 +1,40 @@
+// YGB Application Configuration
+#include "../../../Targets/Shared/Configurations/Base.xcconfig"
+
+// Flavor-specific settings
+FLAVOR = YGB
+FLAVOR_DISPLAY_NAME = YGB
+
+// App Identity
+APP_DISPLAY_NAME = YGB App
+APP_IDENTIFIER_PREFIX = com.example.ygb
+APP_IDENTIFIER = $(APP_IDENTIFIER_PREFIX).app
+BUNDLE_ID = $(APP_IDENTIFIER)
+
+// Team and AppConnect
+DEVELOPMENT_TEAM = PLACEHOLDER_TEAM_ID
+TEAM_ID = PLACEHOLDER_TEAM_ID
+ITC_TEAM_ID = PLACEHOLDER_ITC_TEAM_ID
+
+// AppConnect Credentials (placeholder)
+APPCONNECT_KEY_ID = placeholder_key_id
+APPCONNECT_ISSUER_ID = placeholder_issuer_id
+
+// YGB Specific Constants
+BANK_CODE = YGB
+CONFIG_KEY = ygb_config_v1
+USERID = ygb_user
+CLIENT_CODE = YGB001
+
+// API Configuration
+API_BASE_URL = https://api-ygb.example.com
+API_ENCRYPTION_ENABLED = YES
+API_ENCRYPTION_KEY = ygb_encryption_key_placeholder
+
+// Firebase (placeholder)
+FIREBASE_PROJECT_ID = ygb-firebase-project
+FIREBASE_API_KEY = AIza_placeholder_ygb
+
+// Security
+SECURITY_CERTIFICATE_PINNING_ENABLED = NO
+APPLE_UNIVERSAL_LINK_PREFIX = https://ygb.example.com

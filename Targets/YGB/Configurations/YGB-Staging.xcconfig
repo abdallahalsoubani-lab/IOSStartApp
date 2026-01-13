@@ -1,0 +1,11 @@
+// YGB Staging Configuration
+#include "../../../Targets/Shared/Configurations/Staging.xcconfig"
+#include "YGB-Application.xcconfig"
+
+// Staging overrides for YGB
+CONFIGURATION = Staging
+API_ENVIRONMENT = staging
+API_BASE_URL = https://api-staging-ygb.example.com
+LOG_LEVEL = debug
+ENABLE_NETWORK_LOGGING = YES
+SECURITY_CERTIFICATE_PINNING_ENABLED = YES

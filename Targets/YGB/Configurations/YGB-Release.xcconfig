@@ -1,0 +1,11 @@
+// YGB Release Configuration
+#include "../../../Targets/Shared/Configurations/Release.xcconfig"
+#include "YGB-Application.xcconfig"
+
+// Release overrides for YGB
+CONFIGURATION = Release
+API_ENVIRONMENT = production
+API_BASE_URL = https://api-ygb.example.com
+LOG_LEVEL = error
+ENABLE_NETWORK_LOGGING = NO
+SECURITY_CERTIFICATE_PINNING_ENABLED = YES

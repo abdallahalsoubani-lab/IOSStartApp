@@ -1,0 +1,11 @@
+// DEMO Release Configuration
+#include "../../../Targets/Shared/Configurations/Release.xcconfig"
+#include "DEMO-Application.xcconfig"
+
+// Release overrides for DEMO
+CONFIGURATION = Release
+API_ENVIRONMENT = production
+API_BASE_URL = https://api-demo.example.com
+LOG_LEVEL = error
+ENABLE_NETWORK_LOGGING = NO
+SECURITY_CERTIFICATE_PINNING_ENABLED = YES

@@ -1,0 +1,40 @@
+// DEMO Application Configuration
+#include "../../../Targets/Shared/Configurations/Base.xcconfig"
+
+// Flavor-specific settings
+FLAVOR = DEMO
+FLAVOR_DISPLAY_NAME = DEMO
+
+// App Identity
+APP_DISPLAY_NAME = DEMO App
+APP_IDENTIFIER_PREFIX = com.example.demo
+APP_IDENTIFIER = $(APP_IDENTIFIER_PREFIX).app
+BUNDLE_ID = $(APP_IDENTIFIER)
+
+// Team and AppConnect
+DEVELOPMENT_TEAM = PLACEHOLDER_TEAM_ID
+TEAM_ID = PLACEHOLDER_TEAM_ID
+ITC_TEAM_ID = PLACEHOLDER_ITC_TEAM_ID
+
+// AppConnect Credentials (placeholder)
+APPCONNECT_KEY_ID = placeholder_key_id
+APPCONNECT_ISSUER_ID = placeholder_issuer_id
+
+// DEMO Specific Constants
+BANK_CODE = DEMO
+CONFIG_KEY = demo_config_v1
+USERID = demo_user
+CLIENT_CODE = DEMO001
+
+// API Configuration
+API_BASE_URL = https://api-demo.example.com
+API_ENCRYPTION_ENABLED = YES
+API_ENCRYPTION_KEY = demo_encryption_key_placeholder
+
+// Firebase (placeholder)
+FIREBASE_PROJECT_ID = demo-firebase-project
+FIREBASE_API_KEY = AIza_placeholder_demo
+
+// Security
+SECURITY_CERTIFICATE_PINNING_ENABLED = NO
+APPLE_UNIVERSAL_LINK_PREFIX = https://demo.example.com

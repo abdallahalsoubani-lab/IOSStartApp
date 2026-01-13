@@ -1,0 +1,66 @@
+// English Localization
+
+// App
+"app_name" = "Enterprise iOS App";
+"app_version" = "Version";
+
+// Common
+"ok" = "OK";
+"cancel" = "Cancel";
+"confirm" = "Confirm";
+"close" = "Close";
+"back" = "Back";
+"next" = "Next";
+"previous" = "Previous";
+"save" = "Save";
+"delete" = "Delete";
+"edit" = "Edit";
+"search" = "Search";
+"loading" = "Loading...";
+"error" = "Error";
+"success" = "Success";
+"warning" = "Warning";
+
+// Home Screen
+"home_title" = "Home";
+"home_welcome" = "Welcome to Enterprise iOS App";
+"open_app_guide" = "Open App Guide";
+"show_custom_alert" = "Show Custom Alert";
+"settings" = "Settings";
+
+// App Guide
+"app_guide_title" = "App Guide & Components Catalog";
+"theme_preview" = "Theme Preview";
+"button_styles" = "Button Styles";
+"text_field_states" = "TextField States";
+"state_views" = "State Views";
+"alerts_demo" = "Alerts";
+"localization_demo" = "Localization";
+"router_demo" = "Router Demo";
+"firebase_status" = "Firebase Messaging";
+
+// States
+"loading_data" = "Loading data...";
+"no_items" = "No Items";
+"no_items_message" = "You don't have any items yet";
+"create_item" = "Create Item";
+"failed_to_load" = "Failed to load data";
+"try_again" = "Try Again";
+
+// Authentication
+"login_title" = "Login";
+"email" = "Email";
+"password" = "Password";
+"login_button" = "Login";
+"sign_up" = "Sign Up";
+"forgot_password" = "Forgot Password?";
+
+// Networking
+"no_internet_connection" = "No internet connection";
+"connection_error" = "Connection error";
+"request_timeout" = "Request timeout";
+
+// Validation
+"invalid_email" = "Invalid email address";
+"password_too_short" = "Password must be at least 8 characters";
+"field_required" = "This field is required";

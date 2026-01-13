@@ -1,0 +1,66 @@
+// Arabic Localization
+
+// App
+"app_name" = "تطبيق iOS للمؤسسات";
+"app_version" = "الإصدار";
+
+// Common
+"ok" = "موافق";
+"cancel" = "إلغاء";
+"confirm" = "تأكيد";
+"close" = "إغلاق";
+"back" = "رجوع";
+"next" = "التالي";
+"previous" = "السابق";
+"save" = "حفظ";
+"delete" = "حذف";
+"edit" = "تحرير";
+"search" = "بحث";
+"loading" = "جاري التحميل...";
+"error" = "خطأ";
+"success" = "نجاح";
+"warning" = "تحذير";
+
+// Home Screen
+"home_title" = "الرئيسية";
+"home_welcome" = "مرحباً بك في تطبيق iOS للمؤسسات";
+"open_app_guide" = "فتح دليل التطبيق";
+"show_custom_alert" = "عرض تنبيه مخصص";
+"settings" = "الإعدادات";
+
+// App Guide
+"app_guide_title" = "دليل التطبيق وكتالوج المكونات";
+"theme_preview" = "معاينة المظهر";
+"button_styles" = "أنماط الأزرار";
+"text_field_states" = "حالات حقل الإدخال";
+"state_views" = "طرق العرض بالحالات";
+"alerts_demo" = "التنبيهات";
+"localization_demo" = "التوطين";
+"router_demo" = "عرض التوجيه";
+"firebase_status" = "حالة Firebase Messaging";
+
+// States
+"loading_data" = "جاري تحميل البيانات...";
+"no_items" = "لا توجد عناصر";
+"no_items_message" = "ليس لديك أي عناصر حتى الآن";
+"create_item" = "إنشاء عنصر";
+"failed_to_load" = "فشل في تحميل البيانات";
+"try_again" = "حاول مجدداً";
+
+// Authentication
+"login_title" = "تسجيل الدخول";
+"email" = "البريد الإلكتروني";
+"password" = "كلمة المرور";
+"login_button" = "تسجيل الدخول";
+"sign_up" = "إنشاء حساب";
+"forgot_password" = "هل نسيت كلمة المرور؟";
+
+// Networking
+"no_internet_connection" = "لا توجد اتصالات بالإنترنت";
+"connection_error" = "خطأ في الاتصال";
+"request_timeout" = "انتهت مهلة الطلب";
+
+// Validation
+"invalid_email" = "عنوان بريد إلكتروني غير صحيح";
+"password_too_short" = "يجب أن تكون كلمة المرور 8 أحرف على الأقل";
+"field_required" = "هذا الحقل مطلوب";

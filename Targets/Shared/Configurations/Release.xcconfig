@@ -1,0 +1,11 @@
+// Release Configuration - Production settings
+#include "Base.xcconfig"
+
+CONFIGURATION = Release
+API_ENVIRONMENT = production
+LOG_LEVEL = error
+ENABLE_NETWORK_LOGGING = NO
+SECURITY_CERTIFICATE_PINNING_ENABLED = YES
+DEBUG_MODE = NO
+COPY_PHASE_STRIP = YES
+STRIP_INSTALLED_PRODUCT = YES

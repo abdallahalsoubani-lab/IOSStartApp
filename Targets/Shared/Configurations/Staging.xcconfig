@@ -1,0 +1,10 @@
+// Staging Configuration - Testing/QA settings
+#include "Base.xcconfig"
+
+CONFIGURATION = Staging
+API_ENVIRONMENT = staging
+LOG_LEVEL = debug
+ENABLE_NETWORK_LOGGING = YES
+SECURITY_CERTIFICATE_PINNING_ENABLED = YES
+DEBUG_MODE = YES
+COPY_PHASE_STRIP = NO

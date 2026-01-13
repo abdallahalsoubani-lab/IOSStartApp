@@ -1,0 +1,9 @@
+// Debug Configuration - Shared debug settings
+#include "Base.xcconfig"
+
+CONFIGURATION = Debug
+API_ENVIRONMENT = development
+LOG_LEVEL = verbose
+ENABLE_NETWORK_LOGGING = YES
+SECURITY_CERTIFICATE_PINNING_ENABLED = NO
+DEBUG_MODE = YES
