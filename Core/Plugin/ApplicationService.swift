@@ -1,7 +1,7 @@
 import Foundation
 
 /// Protocol that defines a service that can be plugged into the app lifecycle
-protocol ApplicationService: AnyObject {
+public protocol ApplicationService: AnyObject {
     /// Called when the service should initialize
     func setupService()
 

@@ -1,3 +1,4 @@
+import UIKit
 import Foundation
 import Combine
 
@@ -59,7 +60,7 @@ final class LocalizationManager: ObservableObject {
         if #available(iOS 17.0, *) {
             if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
                 scene.windows.forEach { window in
-                    window.overrideUserInterfaceStyle = .none
+                    window.overrideUserInterfaceStyle = .unspecified
                     window.semanticContentAttribute = isRTL ? .forceRightToLeft : .forceLeftToRight
                 }
             }

@@ -8,6 +8,7 @@ final class RouterPlugin: ApplicationService {
         self.navigations = navigations
     }
 
+    @MainActor
     func setupService() {
         let navigator = Navigator()
 

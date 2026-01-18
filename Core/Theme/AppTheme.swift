@@ -126,16 +126,16 @@ struct ShadowTokens {
     struct Shadow {
         let color: Color
         let radius: CGFloat
-        let x: CGFloat
-        let y: CGFloat
+        let offsetX: CGFloat
+        let offsetY: CGFloat
         let opacity: Double
     }
 
     static let `default` = ShadowTokens(
-        elevation0: Shadow(color: .black, radius: 0, x: 0, y: 0, opacity: 0),
-        elevation1: Shadow(color: .black, radius: 4, x: 0, y: 1, opacity: 0.1),
-        elevation2: Shadow(color: .black, radius: 8, x: 0, y: 2, opacity: 0.12),
-        elevation3: Shadow(color: .black, radius: 12, x: 0, y: 4, opacity: 0.15)
+        elevation0: Shadow(color: .black, radius: 0, offsetX: 0, offsetY: 0, opacity: 0),
+        elevation1: Shadow(color: .black, radius: 4, offsetX: 0, offsetY: 1, opacity: 0.1),
+        elevation2: Shadow(color: .black, radius: 8, offsetX: 0, offsetY: 2, opacity: 0.12),
+        elevation3: Shadow(color: .black, radius: 12, offsetX: 0, offsetY: 4, opacity: 0.15)
     )
 }
 

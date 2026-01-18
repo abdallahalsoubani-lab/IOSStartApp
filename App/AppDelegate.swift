@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 @main
 final class AppDelegate: PluggableApplicationDelegate {
@@ -6,8 +7,8 @@ final class AppDelegate: PluggableApplicationDelegate {
 
     override func services() -> [ApplicationService] {
         [
-            FirebasePlugin(),
-            NotificationPlugin(),
+//            FirebasePlugin(),
+//            NotificationPlugin(),
             WindowPlugin(
                 delegate: self,
                 rootViewController: UIHostingController(rootView: RootView()),
@@ -22,7 +23,9 @@ final class AppDelegate: PluggableApplicationDelegate {
                 AuthenticationAppNavigation(),
                 HomeNavigation(),
                 CustomAlertNavigation(),
-                AppGuideNavigation()
+                AppGuideNavigation(),
+                TrainingNavigation() // ✅ صفحة التدريب الكاملة
+                // SettingsNavigation() // ⚠️ سيتم إضافتها بعد إضافة الملف للـ Xcode project
             ])
         ]
     }

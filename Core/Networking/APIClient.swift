@@ -126,8 +126,6 @@ actor APIClient {
             return .networkError(error)
         case .multipartEncodingFailed:
             return .invalidRequest
-        case .requestCancelled:
-            return .unknown
         case .explicitlyCancelled:
             return .unknown
         @unknown default:

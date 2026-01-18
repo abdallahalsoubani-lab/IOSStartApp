@@ -1,7 +1,7 @@
 import UIKit
 
 open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
-    private(set) var services: [ApplicationService] = []
+    private(set) var registeredServices: [ApplicationService] = []
 
     open func services() -> [ApplicationService] {
         []
@@ -9,7 +9,7 @@ open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Lifecycle Methods
 
-    func application(
+    public func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
@@ -17,22 +17,22 @@ open class PluggableApplicationDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        services.forEach { $0.applicationDidBecomeActive() }
+    public func applicationDidBecomeActive(_ application: UIApplication) {
+        registeredServices.forEach { $0.applicationDidBecomeActive() }
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        services.forEach { $0.applicationWillResignActive() }
+    public func applicationWillResignActive(_ application: UIApplication) {
+        registeredServices.forEach { $0.applicationWillResignActive() }
     }
 
-    func applicationWillTerminate(_ application: UIApplication) {
-        services.forEach { $0.applicationWillTerminate() }
+    public func applicationWillTerminate(_ application: UIApplication) {
+        registeredServices.forEach { $0.applicationWillTerminate() }
     }
 
     // MARK: - Private Methods
 
     private func setupServices() {
-        services = services()
-        services.forEach { $0.setupService() }
+        registeredServices = services()
+        registeredServices.forEach { $0.setupService() }
     }
 }

@@ -1,4 +1,5 @@
 // DEMO Debug Configuration
+#include "../../../Pods/Target Support Files/Pods-DEMO/Pods-DEMO.debug.xcconfig"
 #include "../../../Targets/Shared/Configurations/Debug.xcconfig"
 #include "DEMO-Application.xcconfig"
 

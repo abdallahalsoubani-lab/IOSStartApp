@@ -1,4 +1,5 @@
 // YGB Release Configuration
+#include "../../../Pods/Target Support Files/Pods-YGB/Pods-YGB.release.xcconfig"
 #include "../../../Targets/Shared/Configurations/Release.xcconfig"
 #include "YGB-Application.xcconfig"
 

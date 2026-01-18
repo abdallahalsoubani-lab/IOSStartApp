@@ -3,7 +3,7 @@ import IQKeyboardManagerSwift
 
 final class KeyboardPlugin: ApplicationService {
     func setupService() {
-        IQKeyboardManager.shared.isEnabled = true
+        IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
         IQKeyboardManager.shared.enableAutoToolbar = true

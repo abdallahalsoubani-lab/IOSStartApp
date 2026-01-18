@@ -1,7 +1,7 @@
 import SwiftUI
 
 protocol AppNavigation: AnyObject {
-    func registerRoutes(_ navigator: Navigator)
+    @MainActor func registerRoutes(_ navigator: Navigator)
 }
 
 @MainActor

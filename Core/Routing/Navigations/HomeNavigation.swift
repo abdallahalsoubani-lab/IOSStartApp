@@ -21,6 +21,20 @@ struct HomeScreenView: View {
 
                 VStack(spacing: theme.spacing.md) {
                     Button(action: {
+                        navigator.navigate(to: AppRoute(path: .training))
+                    }) {
+                        HStack {
+                            Image(systemName: "graduationcap.fill")
+                            Text("🎓 صفحة التدريب (كل شي هنا!)")
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(theme.spacing.md)
+                        .background(theme.colors.success)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                    }
+                    
+                    Button(action: {
                         navigator.navigate(to: AppRoute(path: .appGuide))
                     }) {
                         Text("Open App Guide / Components Catalog")
@@ -43,9 +57,10 @@ struct HomeScreenView: View {
                     }
 
                     Button(action: {
-                        print("Settings tapped")
+                        // navigator.navigate(to: AppRoute(path: .settings)) // ⚠️ بعد إضافة SettingsNavigation
+                        print("Settings tapped - Add SettingsNavigation.swift to Xcode first")
                     }) {
-                        Text("Settings")
+                        Text("Settings (Demo)")
                             .frame(maxWidth: .infinity)
                             .padding(theme.spacing.md)
                             .background(theme.colors.surfaceVariant)

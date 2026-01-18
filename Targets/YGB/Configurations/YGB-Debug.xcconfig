@@ -1,4 +1,5 @@
 // YGB Debug Configuration
+#include "../../../Pods/Target Support Files/Pods-YGB/Pods-YGB.debug.xcconfig"
 #include "../../../Targets/Shared/Configurations/Debug.xcconfig"
 #include "YGB-Application.xcconfig"
 

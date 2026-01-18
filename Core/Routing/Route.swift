@@ -11,6 +11,8 @@ struct AppRoute: Route {
         case home = "home"
         case customAlert = "custom-alert"
         case appGuide = "app-guide"
+        case settings = "settings" // مثال: صفحة Settings
+        case training = "training" // صفحة التدريب - تحتوي على كل الأمثلة
     }
 
     let path: Path

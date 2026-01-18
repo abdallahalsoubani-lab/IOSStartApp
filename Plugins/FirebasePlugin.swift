@@ -6,11 +6,20 @@ final class FirebasePlugin: NSObject, ApplicationService {
     static let shared = FirebasePlugin()
 
     func setupService() {
+        // Check if GoogleService-Info.plist exists
+        guard let _ = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") else {
+            #if DEBUG
+            print("[FirebasePlugin] ⚠️ GoogleService-Info.plist not found. Firebase not initialized.")
+            print("[FirebasePlugin] Please add a valid GoogleService-Info.plist to your project.")
+            #endif
+            return
+        }
+        
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
 
         #if DEBUG
-        print("[FirebasePlugin] Firebase initialized successfully")
+        print("[FirebasePlugin] ✅ Firebase initialized successfully")
         #endif
     }
 

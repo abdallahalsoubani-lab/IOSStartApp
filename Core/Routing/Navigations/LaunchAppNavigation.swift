@@ -3,7 +3,9 @@ import SwiftUI
 class LaunchAppNavigation: AppNavigation {
     func registerRoutes(_ navigator: Navigator) {
         navigator.registerRoute("launch") { navigator in
-            AnyView(LaunchScreenView(navigator: navigator))
+            // تغيير: صفحة التدريب هي أول صفحة تفتح بدلاً من Launch
+            // AnyView(LaunchScreenView(navigator: navigator))
+            AnyView(TrainingView(navigator: navigator))
         }
     }
 }

@@ -344,7 +344,7 @@ struct ColorBox: View {
     }
 }
 
-#Preview {
-    AppGuideView(navigator: Navigator())
-        .appTheme(AppTheme())
-}
+//#Preview {
+//    AppGuideView(navigator: Navigator())
+//        .appTheme(AppTheme())
+//}

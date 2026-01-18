@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AppTextField: View {
-    enum State {
+    enum State: Equatable {
         case normal
         case error(String)
         case success

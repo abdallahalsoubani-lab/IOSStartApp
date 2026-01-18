@@ -1,4 +1,5 @@
 // DEMO Release Configuration
+#include "../../../Pods/Target Support Files/Pods-DEMO/Pods-DEMO.release.xcconfig"
 #include "../../../Targets/Shared/Configurations/Release.xcconfig"
 #include "DEMO-Application.xcconfig"
 

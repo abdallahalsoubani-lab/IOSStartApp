@@ -215,20 +215,20 @@ extension Color {
         var rgb: UInt64 = 0
         Scanner(string: hexSanitized).scanHexInt64(&rgb)
 
-        let r = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
-        let g = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
-        let b = CGFloat(rgb & 0x0000FF) / 255.0
+        let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(rgb & 0x0000FF) / 255.0
 
-        self.init(red: r, green: g, blue: b)
+        self.init(red: red, green: green, blue: blue)
     }
 
     /// Gets hex string representation
     var hexString: String? {
         guard let cgColor = self.cgColor else { return nil }
         let components = cgColor.components ?? [0, 0, 0, 1]
-        let r = Int(components[0] * 255.0)
-        let g = Int(components[1] * 255.0)
-        let b = Int(components[2] * 255.0)
-        return String(format: "#%02X%02X%02X", r, g, b)
+        let red = Int(components[0] * 255.0)
+        let green = Int(components[1] * 255.0)
+        let blue = Int(components[2] * 255.0)
+        return String(format: "#%02X%02X%02X", red, green, blue)
     }
 }
